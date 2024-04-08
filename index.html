@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinder Effect</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-black font-['Gilroy']">
+      <div class="imgcontainer w-full h-screen relative overflow-hidden">
+        <div
+          class="main absolute w-full h-screen z-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <img class="img w-full h-full object-cover" src="" alt="" />
+        </div>
+        <div
+          class="incoming absolute w-full h-screen z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <img
+            class="w-full h-screen object-cover"
+            src="https://images.unsplash.com/photo-1524638431109-93d95c968f03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHJ1c3NpYW4lMjBnaXJsfGVufDB8fDB8fHww"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div
+        class="top-0 left-0 absolute w-full h-screen z-[4] px-4 py-3 flex flex-col justify-between"
+      >
+        <div class="navbar flex items-center justify-between text-white">
+          <div
+            class="profileimg overflow-hidden w-[3rem] h-[3rem] rounded-full bg-yellow-400"
+          >
+            <img class="w-full h-full object-cover" src="" alt="" />
+          </div>
+          <h2 class="font-regular text-2xl tracking-tighter">They like You.</h2>
+          <div
+            class="chaticon relative flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white/40"
+          >
+            <i class="opacity-90 ri-chat-3-fill text-xl"></i>
+            <div
+              class="badge flex items-center justify-center top-0 -translate-y-2 left-1/2 rounded-full text-center absolute w-5 h-5 bg-red-500"
+            >
+              <h5 class="text-xs font-semibold"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="details w-full">
+          <div class="flex gap-3 items-center">
+            <i
+              class="element h-[2rem] w-[2rem] items-center flex justify-center text-xl rounded-full ri-corner-left-up-fill bg-white"
+            ></i>
+            <h2 class="element location text-white">USA, California</h2>
+          </div>
+          <div class="element flex mt-1 gap-3 text-white">
+            <h2 class="element name text-6xl">Victoria</h2>
+            <h2 class="element age text-6xl opacity-70">20</h2>
+          </div>
+          <div class="element flex gap-4 mt-2 text-white">
+            <div
+              class="tag py-[1px] px-[1px] flex font-regular text-lg gap-1 bg-white/30 rounded-full"
+            >
+              <i class="ri-spotify-fill"></i>
+              <h2>Music</h2>
+            </div>
+            <div
+              class="tag py-[1px] px-[1px] flex font-regular text-lg gap-1 bg-white/30 rounded-full"
+            >
+              <i class="ri-book-fill"></i>
+              <h2>Reading Books</h2>
+            </div>
+            <div
+              class="tag py-[1px] px-[1px] flex font-regular text-lg gap-1 bg-white/30 rounded-full"
+            >
+              <i class="ri-drinks-2-fill"></i>
+              <h2>Drinks</h2>
+            </div>
+          </div>
+          <div class="element bio text-white mt-3">
+            <h1>Bio</h1>
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+              maiores distinctio! Suscipit doloribus saepe harum inventore!
+              Veniam, harum eos! Dolore dolor dolorem odit impedit ullam.
+            </h2>
+          </div>
+          <div class="flex items-start mt-3 gap-4">
+            <button class="deny py-2 rounded-xl w-1/2 bg-[white]">
+              <i class="ri-close-fill text-2xl"></i>
+            </button>
+            <button class="accept py-2 rounded-xl w-1/2 bg-[#FC5149]">
+              <i class="ri-heart-3-fill text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
